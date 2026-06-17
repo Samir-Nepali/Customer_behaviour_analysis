@@ -12,7 +12,7 @@ This project analyzes customer shopping behaviour using transactional data from 
 
 ## Exploratory Data Analysis using Python
 - **Data loading**: Imported datasets using pandas.
--**Initial Exploration**: Used df.info() to check structure and .describe() for summary statistics.
--**Missing data handling**: Checked for null values (df.isnull().sum()) and imputed missing values in the Review Rating column using median rating of each product category.
+- **Initial Exploration**: Used df.info() to check structure and .describe() for summary statistics.
+- **Missing data handling**: Checked for null values (df.isnull().sum()) and imputed missing values in the Review Rating column using median rating of each product category.
 (df['Review Rating']= df.groupby('Category') ['Review Rating'].transform(lambda x: x.fillna(x.median())))
--**Column Standardization**: Renamed columns to make snake case for better readability and documentation.
+- **Column Standardization**: Renamed columns to make snake case for better readability and documentation.
